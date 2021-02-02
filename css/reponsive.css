@@ -1,0 +1,342 @@
+/*		Default Layout: 1170px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+*/
+	
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+/*
+		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.mainmenu {
+		display: none;
+	}
+	.main-title > h1 {
+		font-size: 50px;
+	}
+
+	.title-button .btn-join {
+		width: auto;
+		font-size: 12px;
+	}
+
+	.about-cont {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		flex: 100%;
+		align-items: center;
+		display: flex;
+	}
+	.about-text {
+		margin-bottom: 30px;
+	}
+	/* about area end */
+	.service-item {
+		position: relative;
+		padding-bottom:100px;
+	}
+	.service_left,.service_right {
+		display: inline-block;
+		position: absolute;
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		flex: 100%;
+		align-items: center;
+		display: flex;
+	}
+	.service_right {
+		left: 50%;
+	}
+	.service-item_cont {
+		width: 160px;
+		height: 210px;
+		float: left;
+		text-align: left;
+	}
+	
+	/* service area end */
+	.user-cases_icon {
+		float: none;
+		margin-right: 0;
+	}
+	.user-cases_text {
+		text-align: left;
+	}
+	.user-cases_icon {}
+	.user-cases_text > p {
+		padding: 0;
+	}
+	img.cases_bg {
+		display: none;
+	}
+	/* user cases area end */
+
+	.facts-item {
+		margin-right: 2%;
+	}
+	img.facts-bg {
+		top: 51%;
+		left: 0;
+	}
+
+	/* facts area end */
+
+	.token-content {
+		max-width: 100%;
+		flex: 100%;
+	}
+	.token-cont > p {
+		padding: 0;
+		font-size: 400;
+	}
+	/* token area end */
+
+	.document-file_wrap {
+		width: 100%;
+	}
+	.doc-file_column {
+		width: 47%;
+		float: left;
+		margin-right: 5%;
+	}
+	.doc-file_column:last-child {
+		margin-right: 0;
+	}
+	/* document area end */
+
+	.faq-cont-wrap {
+		width: 100%;
+	}
+	.faq-cont {
+		width: 100%;
+	}
+	/* faq area end */
+	.footer-columm {
+		max-width: 80%;
+		width: 100%;
+		margin: 0 auto;
+		flex: 100%;
+		text-align: center;
+		align-items: center;
+    	margin-bottom: 30px;
+	}
+	.social-link > p {
+		text-align: center;
+	}
+	.subscribe-form > p {
+		text-align: center;
+	}
+	.social-link #footer-social_list {
+		width: 60%;
+		margin: 0 auto;
+		align-items: center;
+		display: flex;
+	}
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+*/
+@media only screen and (max-width: 767px) {
+	h2,.h2 {
+		font-size: 170%;
+	}
+	.mainmenu {
+		display: none;
+	}
+	.main-title > h1 {
+		font-size: 200%;
+		font-weight: 700;
+	}
+	.scroll-down {
+		margin-right: 50%;
+	}
+
+	.about-cont {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+		flex: 100%;
+		align-items: center;
+		display: flex;
+	}
+	.about-text {
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	.wb-about_img_wrap {
+		margin-left: 20%;
+	}
+	.service_left,.service_right,.service-item_right,.service-item_left {
+		width: 100%;
+	}
+	.service-item_right {
+		float: none !important;
+	}
+	.service-item_cont {
+		width: 48%;
+	}
+
+	img.cases_bg {
+		display: none;
+	}
+
+	.user-cases_cont {
+		width: 100%;
+		text-align: center;
+		align-items: center;
+	}
+	.user-cases_text {
+		width: 100%;
+	}
+	.user-cases_icon {
+		width: 136px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		float: none;
+	}
+
+	.facts-wrap {
+		width: 100%;
+		text-align: center;
+		align-items: center;
+		margin-left: 12%;
+	}
+	.facts-item {
+		margin-right: 25%;
+	}
+	.facts-item:nth-child(1),.facts-item:nth-child(2),.facts-item:nth-child(3),.facts-item:nth-child(4),.facts-item:nth-child(5) {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.facts-item:nth-child(5) {
+		margin-left: 25%;
+	}
+
+	.document-file_wrap {
+		width: 100%;
+	}
+	.doc-file_column {
+		width: 100%;
+		height: 300px;
+		margin-bottom: 30px;
+	}
+	.doc-file_column:last-child {
+		margin-right: 0;
+	}
+	.doc-cont {
+		padding-top: 20%;
+	}
+
+	.chart > img {
+		width: 100%;
+		height: auto;
+		float: none;
+		}
+
+	.faq-cont {
+		width: 100%;
+	}
+	.faq_panel .panel-heading > h3 span {
+		font-size: 60%;
+	}
+
+	.contact-form_wrap {
+		width: 100%;
+	}
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	h2,.h2 {
+		font-size: 150%;
+	}
+	.mainmenu {
+		display: none;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.title-button .btn-whilepaper, .title-button .btn-join {
+		width: 100%;
+		text-align: center;
+	}
+	img.video_bg {
+		top: 54%;
+	}
+
+	.wb-about_img_wrap {
+		display: none;
+	}
+	.service-cont_wrap {
+		padding-top: 0;
+	}
+	.service-item_cont {
+		width: 100%;
+	}
+
+	/* road map area */
+	.box {
+		width: 100%;
+		padding: 0 0 30px 0;
+	}
+	.box .time span {
+		left: 0;
+		top: 20px;
+	}
+	.box .time span:last-child {
+		top: 35px;
+	}
+	.box ul:before {
+		left: 9.2%;
+		display: none;
+	}
+	.box ul li {
+		margin-left: 15%;
+	}
+	.box .title:before {
+		display: none;
+	}
+	.box .title > span {
+		margin-left: -21px;
+	}
+
+	/* road map end */
+
+	.facts-wrap {margin-left: 12%;}
+	.facts-item {
+		margin-right: 16%;
+	}
+
+	.subscribe-form input {
+		width: 100%;
+	}
+	input.s-submit, .subscribe-form input [type=submit] {
+		width: 20%;
+	}
+}
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+*/
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+}
